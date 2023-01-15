@@ -5,8 +5,8 @@ const INITIAL_STATE = ["Dinesh", "Ramesh", "Suresh"];
 const App = () => {
   return (
     <div id="main">
-      <ol>
-        {INITIAL_STATE.map((relative) => {
+      <ol key="relativeList">
+        {INITIAL_STATE?.map((relative, idx) => {
           return <li key={relative}>{relative}</li>;
         })}
       </ol>
